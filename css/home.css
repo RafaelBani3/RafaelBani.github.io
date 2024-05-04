@@ -1,0 +1,1015 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+
+/* Body */
+body{
+  
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    width: 100%;
+    min-height: 200px;
+  }
+
+button{
+    font-family: sans-serif;
+    font-size: 15px;
+    background: transparent;
+    color: white;
+    border: white 2px solid;
+    border-radius: 30px;
+    padding: 12px 20px;
+    margin-top: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Header */
+header{
+    background-color: #365486;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    -webkit-box-align: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all, 0.3s;
+}
+
+
+/* Navbar */
+
+.navbar{
+    background-color: transparent;
+    height: 80px;
+    text-decoration: none;
+    width: 100%;
+    margin-top: 5px;
+
+}
+
+.logo{
+    padding: 0px 130px;
+    color: #DCF2F1;
+    font-size: 30px;
+    font-family: "Khula", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 80px; 
+}
+
+/* Navigation */
+
+.list-menu{
+    float: right;
+    margin-right: 130px;
+}
+
+.list-menu li{
+    display: inline-block;
+    margin: 0 15px;  
+    line-height: 80px; 
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+
+}
+
+li a{
+    color: #DCF2F1;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+
+}
+
+.list-menu .active, .list-menu a:hover{
+    transition: .5s;
+    background: #DCF2F1;
+    color: #365486;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+/* Menu Bars untuk Responsive Model Hp */
+
+.checkbtn{
+    font-size: 30px;
+    color: #DCF2F1;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{ /* buat id check dibuat agar ga muncul*/
+    display: none; 
+}
+
+
+
+/* BANNER Images */
+
+.banner-section{
+    background-image: url('../images/banner.svg');
+    background-size: cover; /* Mengubah ke cover agar latar belakang terlihat penuh */
+    padding-right: 130px;
+    backdrop-filter: blur(79px);
+    width:100%;
+    height: 800px; /* Sesuaikan tinggi sesuai kebutuhan */
+}
+
+
+/* Banner Content */
+.banner-content{
+    position: absolute;
+    top: 50%; /* Menggeser ke tengah secara vertikal */
+    left: 40%; /* Menggeser ke tengah secara horizontal */
+    transform: translate(-50%, -50%); /* Memusatkan elemen */
+    color: #DCF2F1;
+}
+
+/* Atur Judul */
+.banner-content h2{
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-bottom: 56px;
+}
+
+/* Atur Isi */
+.banner-content p{
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 40px;
+}
+
+/* Atur link button judul (fungsi A) */
+.banner-content .btn-works{
+    text-decoration: none;
+    background-color: #DCF2F1;
+    color: #365486;
+    padding: 7px 13px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 20px;
+}
+
+.banner-content .btn-works:hover{
+    text-decoration: none;
+    background-color: #1F2544;
+    color: #DCF2F1;
+    padding: 7px 13px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 20px;
+}
+
+
+/* Section About Me */
+.aboutme {
+    background-image: linear-gradient(to bottom, #365486 10%,  rgba(54, 84, 134, 1) 10%,rgba(255, 255, 255, 0.5) 100%);
+    text-align: center;
+    background-size: auto;
+    padding-bottom: 55px;
+    padding-right: 130px;
+    backdrop-filter: blur(79px);
+    width:100%;
+    height: 100%;
+}
+
+
+.judul{
+    padding-top: 55px;
+    display: flex; 
+    padding-left: 130px;
+    text-decoration: underline;
+    color: #DCF2F1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    padding-bottom: 35px;
+}
+
+.isi-konten{
+    padding-left: 130px;
+    text-align: justify;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.paragraf1{
+    margin-bottom: 30px;
+}
+
+.foto-profil{
+    display:inline-flex;
+    justify-content: right;
+    float: right;
+    padding-top: 70px;
+    padding-left: 50px;
+}
+
+.foto{
+    width: 450px;
+    height: 390px;
+    object-fit:cover;   
+}
+
+.isi-konten .btn{
+    font-family: sans-serif;
+    font-size: 15px;
+    transition: .5s ease-in-out;
+    background: transparent;
+    color: #365486;
+    border: #365486 2px solid;
+    border-radius: 30px;
+    padding: 12px 20px;
+    margin-top: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.btn:hover{
+    font-family: sans-serif;
+    font-size: 15px;
+    transition: .5s ease-in-out;
+    background: #365486;
+    color: white;
+    border: #1F2544 2px solid;
+    border-radius: 30px;
+    padding: 12px 20px;
+    margin-top: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+ /* Service I Offer */
+
+
+.service{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-top: 55px;
+    padding-bottom: 150px;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.judul-service{
+    color: #365486;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    padding-bottom: 55px;
+    text-decoration: underline;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px 130px;
+    gap: 10px;
+    width: 100%;
+    
+  }
+
+
+  .front{
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+
+  .service-card {
+    position: relative;
+    min-height: 270px;
+    border: 1px solid #365486;
+    border-radius: 3px;
+    padding: auto;
+    max-width: 300px;
+    perspective: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+
+}
+
+.front:hover .service-card {
+    transform: rotateY(180deg);
+    border-radius: 15px;
+    border: 1px solid transparent;
+
+  }
+
+.body, .back, .back2, .back3{
+    padding: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    border-radius: 15px;
+
+    position: absolute;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.service-card .body{
+    background-color: transparent;
+    color: black;
+    
+}
+
+.back{
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    background-image: url('../images/Service\ 3.svg');
+    background-size: cover;
+    color: white;
+    transform: rotateY(180deg);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+}
+
+
+.back2{
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    background-image: url('../images/service.svg');
+    background-size: cover;
+    color: white;
+    transform: rotateY(180deg);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.back3{
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    background-image: url('../images/Service\ 2.svg');
+    background-size: cover;
+    color: white;
+    transform: rotateY(180deg);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.service-card .body img.icon {
+    margin-top: 40px;
+    width: 55px;
+    margin-bottom: 25px;
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s;
+    
+}
+
+
+/* Portofolio */
+
+.project{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 150px;
+}
+
+.judul-project{
+    padding-bottom: 75px;
+    color: #365486;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.project-card{
+    position: relative;
+    padding: auto;
+    max-width: 360px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    border-radius: 15px;
+}
+
+.project-card img{
+    width: 350px;
+    height: 270px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/*  */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(54, 84, 134, 0.7); /* putih transparant */
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+  
+  .project-card:hover .overlay {
+    opacity: 1;
+    animation: fadeIn 0.5s ease-out forwards;
+    
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .overlay span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    
+  }
+  
+  .overlay p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px; /* Tambahkan margin atas pada <p> */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/* UNTUK RESPONSIVE */
+@media (max-width: 1065px){
+    
+    .logo{
+        padding-left: 65px;
+        font-size: 40px;
+        transition: .5s;
+    }
+
+    .list-menu li a{
+        font-size: 13px;
+        
+    }
+
+    /* BANNER Images */
+
+    .banner-section{
+        background-image: url('../images/banner.svg');
+        background-size: cover; /* Mengubah ke cover agar latar belakang terlihat penuh */
+        padding-right: 130px;
+        backdrop-filter: blur(79px);
+        width:100%;
+        height: 700px; /* Sesuaikan tinggi sesuai kebutuhan */
+        transition: .5s;
+
+    }
+
+
+    /* Banner Content */
+    .banner-content{
+        position: absolute;
+        top: 50%; /* Menggeser ke tengah secara vertikal */
+        left: 37.5%; /* Menggeser ke tengah secara horizontal */
+        transform: translate(-50%, -50%); /* Memusatkan elemen */
+        color: #DCF2F1;
+        transition: .5s;
+
+    }
+
+    /* Atur Judul */
+    .banner-content h2{
+        font-size: 30px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        margin-bottom: 20px;
+        transition: .5s;
+
+    }
+
+    /* Atur Isi */
+    .banner-content p{
+        font-size: 15px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        margin-bottom: 40px;
+        transition: .5s;
+
+    }
+
+    /* Atur Button Download */
+    .banner-content .btn-works{
+        text-decoration: none;
+        background-color: #DCF2F1;
+        color: #365486;
+        padding: 7px 13px;
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        border-radius: 20px;
+    }
+    
+    .banner-content .btn-works:hover{
+        text-decoration: none;
+        background-color: #1F2544;
+        color: #DCF2F1;
+        padding: 7px 13px;
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        border-radius: 20px;
+    }
+    
+
+
+/* Atur Aboutme Section */
+
+/* Section About Me */
+.aboutme {
+    text-align: center;
+    background-size: auto;
+    padding-bottom: 55px;
+    padding-right: 130px;
+    backdrop-filter: blur(79px);
+    width: 100%;
+    height: 100%;
+    position: relative; /* Menambahkan posisi relatif untuk konten */
+    transition: .5s;
+
+}
+
+.judul {
+    position: relative; /* Menambahkan posisi relatif untuk konten */
+    transition: .5s;
+    padding-top: 410px;
+    display: flex;
+    padding-left: 130px;
+    text-decoration: underline;
+    color: #DCF2F1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    padding-bottom: 35px;
+}
+
+.isi-konten {
+    padding-left: 130px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    position: relative; /* Menambahkan posisi relatif untuk konten */
+    transition: .5s;
+
+}
+
+.foto-profil {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    position: absolute; /* Mengubah posisi menjadi absolut */
+    top: 0; /* Menempatkan elemen di bagian atas kontainer */
+    left: 50%; /* Pusat horizontal elemen */
+    transform: translateX(-50%); /* Pusat horizontal elemen */
+    width: 410px;
+    height: 350px;
+    object-fit: cover;
+    z-index: 999; /* Pastikan foto berada di atas konten */
+    transition: .5s;
+
+}
+
+.foto {
+    width: 100%; /* Mengisi lebar kontainer */
+    height: 100%; /* Mengisi tinggi kontainer */
+    object-fit: cover;
+    transition: .5s;
+
+}
+
+}
+
+
+
+@media (max-width: 975px){
+    .checkbtn{
+        display: block;
+    }
+    .list-menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #1F2544;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+
+    .list-menu li{
+        display: block;
+        padding-top: 30px;
+    }
+
+    .list-menu li a{
+        font-size: 20px;
+        padding: 7px 20px;
+        border-radius: 8px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #365486;
+    }
+
+    #check:checked ~ .list-menu{
+        left: 0;
+    }
+
+    
+
+}
+
+@media (max-width: 800px){
+   
+.logo{
+    padding-left: 30px;
+    font-size: 30px;
+    transition: .5s;
+}
+/* BANNER Images */
+
+.banner-section{
+    background-image: url('../images/banner.svg');
+    background-size: cover; /* Mengubah ke cover agar latar belakang terlihat penuh */
+    padding-right: 130px;
+    backdrop-filter: blur(79px);
+    width:100%;
+    height: 700px; /* Sesuaikan tinggi sesuai kebutuhan */
+    transition: .5s;
+
+}
+
+
+/* Banner Content */
+.banner-content{
+    position: absolute;
+    top: 55%; /* Menggeser ke tengah secara vertikal */
+    left: 37.5%; /* Menggeser ke tengah secara horizontal */
+    transform: translate(-50%, -50%); /* Memusatkan elemen */
+    color: #DCF2F1;
+    transition: .5s;
+
+}
+
+/* Atur Judul */
+.banner-content h2{
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-bottom: 20px;
+    transition: .5s;
+
+}
+
+/* Atur Isi */
+.banner-content p{
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 40px;
+    transition: .5s;
+
+}
+
+/* Atur Button Download */
+.banner-content .btn-works{
+    text-decoration: none;
+    background-color: #DCF2F1;
+    color: #365486;
+    padding: 7px 13px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 20px;
+}
+
+.banner-content .btn-works:hover{
+    text-decoration: none;
+    background-color: #1F2544;
+    color: #DCF2F1;
+    padding: 7px 13px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 20px;
+}
+
+/* Section About Me */
+.aboutme {
+    text-align: center;
+    background-size: auto;
+    padding-bottom: 55px;
+    padding-right: 10px;
+    backdrop-filter: blur(79px);
+    width: 100%;
+    height: 100%;
+    position: relative; /* Menambahkan posisi relatif untuk konten */
+    transition: .5s;
+
+}
+
+.judul {
+    position: relative; /* Menambahkan posisi relatif untuk konten */
+    transition: .5s;
+    padding-top: 410px;
+    display: flex;
+    padding-left: 8.5%;
+    text-decoration: underline;
+    color: #DCF2F1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    padding-bottom: 35px;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.isi-konten {
+    padding-left: 8.5%;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    position: relative; /* Menambahkan posisi relatif untuk konten */
+    transition: .5s;
+    text-align: left;
+    padding-right: 6.5%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.foto-profil {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    position: absolute; /* Mengubah posisi menjadi absolut */
+    top: 0; /* Menempatkan elemen di bagian atas kontainer */
+    left: 50%; /* Pusat horizontal elemen */
+    transform: translateX(-50%); /* Pusat horizontal elemen */
+    width: 410px;
+    height: 370px;
+    object-fit: cover;
+    z-index: 999; /* Pastikan foto berada di atas konten */
+    transition: .5s;
+
+}
+
+.foto {
+    width: 100%; /* Mengisi lebar kontainer */
+    height: 100%; /* Mengisi tinggi kontainer */
+    object-fit: cover;
+    transition: .5s;
+
+}
+
+
+ /* Service I Offer */
+
+
+ .service{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-top: 55px;
+    background-color: #edf8f7;
+    padding-bottom: 55px;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.judul-service{
+    font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
+    color: #365486;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    padding-bottom: 55px;
+    text-decoration: underline;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    padding: 1px 10px;
+
+  }
+
+  .front{
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+
+  .service-card {
+    position: relative;
+    min-height: 270px;
+    border: 1px solid #365486;
+    border-radius: 3px;
+    padding: auto;
+    max-width: 300px;
+    perspective: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+
+}
+
+.front:hover .service-card {
+    transform: rotateY(180deg);
+    border-radius: 15px;
+    border: 1px solid transparent;
+
+  }
+
+.body, .back, .back2, .back3{
+    padding: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    border-radius: 15px;
+
+    position: absolute;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.service-card .body{
+    background-color: transparent;
+    color: black;
+    
+}
+
+.back{
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    background-image: url('../images/Service\ 3.svg');
+    background-size: cover;
+    color: white;
+    transform: rotateY(180deg);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+}
+
+
+.back2{
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    background-image: url('../images/service.svg');
+    background-size: cover;
+    color: white;
+    transform: rotateY(180deg);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.back3{
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    background-image: url('../images/Service\ 2.svg');
+    background-size: cover;
+    color: white;
+    transform: rotateY(180deg);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.service-card .body img.icon {
+    margin-top: 40px;
+    width: 55px;
+    margin-bottom: 25px;
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s;
+    
+}
+
+}
