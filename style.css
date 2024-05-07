@@ -1,0 +1,2085 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+  width: 100%;
+  min-height: 300px;
+  background: linear-gradient(to bottom, #1d3557,#457b9d, #f1faee );
+}
+
+a{
+    text-decoration: none;
+}
+/* ==== Navbar ==== */
+
+/* == 1. Logo & Title Navbar ==*/
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    z-index: 9;
+    background-color: #1d3557;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 7rem;
+    text-align: center;
+    -webkit-box-align: center;
+    transition: all, 0.3s;
+
+}
+
+.title-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.title-navbar a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-navbar .nav-logo{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.title-navbar a span{
+    color: white;
+    font-family: "Khula", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 27px;
+    align-items: center;
+    padding: 0px 10px;
+    margin-top: 10px;
+}
+
+.menu-btn-navbar{
+    display: none;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.nav-links li a{
+    color: #f1faee;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 25px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.nav-links a:hover{
+    transition: .5s;
+    background: #f1faee;
+    padding: 5px 10px;
+    color: #1d3557;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+/* LI A CONTACT US */
+.nav-links .contactus-menu{
+    display: none;
+}
+
+.contactus{
+    padding: 10px 15px;
+    border: none;
+    background-color: #e63946;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #f1faee;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.contactus:hover{
+    background-color:#1d3557;
+    color: #f1faee;
+}
+
+/* == End Menu Button Link Navbar == */
+
+/* ===== END NAVBAR ==== */
+
+
+/* == Header - Hero/Landing Page Website == */
+
+.container_header{
+    max-width: 1400px;
+    margin: auto;
+    padding: 6rem 7rem;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15%;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content {
+    background-color: #457b9d;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #f1faee;
+}
+
+.header-content .title-header{
+   margin-bottom: 20px;
+}
+
+
+.header-content .title-header h1{
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #f1faee;
+}
+
+.header-content .title-header h2{
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #f1faee;
+}
+
+.header-content p{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.contactus-hero{
+    padding: 10px 15px;
+    border: none;
+    background-color: #e63946;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #f1faee;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 15px;
+}
+  
+/* == END Header - Hero/Landing Page Website == */
+
+
+/* === SECTION ABOUT ME === */
+.container_aboutme{
+    max-width: 1400px;
+    margin: auto;
+    padding: 10rem 7rem;
+}
+
+
+.aboutme-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding-top: 35px;
+}
+
+.title-aboutme h1{
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #f1faee;
+}  
+
+.aboutme-content .image-aboutme img{
+    max-width: 500px;
+    display:inline-flex;
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.aboutme-content .image-aboutme:hover img {
+    transform: scaleX(1.0);
+}
+  
+
+.aboutme-content .image-aboutme{
+    padding-right: 10%;
+}
+
+.aboutme-content .desc-aboutme{
+    text-align: justify;
+    color: #f1faee;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.paragraf1{
+    margin-bottom: 30px;
+}
+
+.paragraf2{
+    margin-bottom: 10px;
+}
+
+.cv-btn{
+    padding: 10px 15px;
+    border: none;
+    background-color: #e63946;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #f1faee;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    font-size: 15px;
+}
+/* === END SECTION ABOUT ME === */
+
+
+/* ==== Section  SERVICE ====*/
+
+.container_service{
+    max-width: 1400px;
+    margin: auto;
+    padding: 10rem 7rem;
+}
+
+.title-service h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #f1faee;
+    font-size: 40px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    width: 100%;
+    padding-top: 35px;
+
+  }
+
+  .front{
+    width: 100%;
+    max-width: 300px;
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+
+
+  }
+
+  .service-card {
+    position: relative;
+    text-align: center;
+    transition: all 0.6s ease-in-out;
+    padding: 30px;
+}
+
+.body .title{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #caf0f8;
+    font-size: 16px;    
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.subtitle{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #f1faee;
+    font-size: 12px;    
+}
+
+/* ==== END SECTION SERVICE ==== */
+
+
+
+
+
+/* Section Portofolio */
+.container_portfolio{
+    max-width: 1400px;
+    margin: auto;
+    padding: 10rem 7rem;
+}
+
+.title-portfolio{
+    text-align: center;
+}
+
+.title-portfolio h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 15px;
+    color: #caf0f8;
+    font-size: 40px;
+}
+
+.title-portfolio p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 15px;
+    color: #f1faee;
+    font-size: 17px;
+}
+
+
+/* Portofolio */
+
+
+.row-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    width: 100%;
+    padding-top: 35px;
+}
+
+.project-card{
+    position: relative;
+    padding: auto;
+    max-width: 360px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    border-radius: 15px;
+}
+
+.project-card img{
+    width: 350px;
+    height: 270px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/*  */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(54, 84, 134, 0.7); /* putih transparant */
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+  
+  .project-card:hover .overlay {
+    opacity: 1;
+    animation: fadeIn 0.5s ease-out forwards;
+    
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .overlay span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    
+  }
+  
+  .overlay p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px; /* Tambahkan margin atas pada <p> */
+  }
+
+/* End Portfolio */
+
+
+/* Social Media */
+
+
+
+/* socialmedia */
+.social-media{
+    justify-content: center;
+    padding: 6rem 1rem;
+}
+
+.social-media-title{
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 23px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.social-media-title p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #343642;
+    margin-bottom: 20px;
+    justify-content: center;
+
+}
+
+
+.icon{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.icon .ri{
+    font-size: 30px;
+    color: #457b9d;
+    transition: 0.5s ease-in-out;
+    padding: 10px 15px;
+}
+
+.icon .ri:hover{
+    background-color: #1d3557;
+    color: #ffff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+/* End Social Media */
+
+
+/* copy right */
+
+.copyright{
+    background-color: #457b9d;
+    color: #ffff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.credit-title h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    padding: 15px;
+}
+/* END COPYRIGHT */
+
+
+
+
+
+
+
+
+
+
+/* ===== Responsive View Untuk Ukuran layar < 800px ===== */
+@media (max-width: 1000px){
+
+ 
+      /* ===== NAVBARR ==== */
+      nav{
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        margin: auto;
+        z-index: 999;
+        background: #1d3557;
+        align-items: center;
+        padding: 2rem 7rem;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+        justify-content: space-between;
+    }
+
+
+
+
+.title-navbar .nav-logo{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.title-navbar a span{
+    color: white;
+    font-family: "Khula", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    align-items: center;
+    padding: 0px 10px;
+    margin-top: 10px;
+}
+
+.menu-btn-navbar{
+    display: none;
+}
+
+.nav-links{
+   position: fixed;
+   width: 100%;
+   height: 400px;
+   background-color: #457b9d;
+   top: 115px;
+   left: 0;
+   transform: translateX(-100%);
+   text-align: center;
+   flex-direction: column;
+   z-index: -1;
+   display: flex;
+   text-align: center;
+   justify-content:space-between;
+   align-items: center;
+    transition: all 0.5s ease-in-out;
+   
+}
+
+.nav-links li{
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+.nav-links li a{
+    color: #f1faee;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 25px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.nav-links a:hover{
+    transition: .5s;
+    background: #f1faee;
+    padding: 5px 10px;
+    color: #1d3557;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.nav-links .contactus-menu{
+    display: flex;
+}
+
+.contactus{
+    display: none;
+}
+
+.title-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    
+}
+
+.menu-btn-navbar{
+    display: block;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #f1faee;
+    cursor: pointer;
+    transition: all 0.5 ease-in-out;
+}
+
+.nav-links.open{
+    transform: translateX(0);
+    transition: all 0.5 ease-in-out;
+}
+
+    /* ===== END NAVBARR ==== */
+
+  /* HEADER - HERO/LANDING PAGE WEBSITE */
+
+  .container_header{
+    max-width: 1400px;
+    margin: auto;
+    padding: 0rem 7rem;
+    padding-top: 20%;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.header-content {
+    background-color: #457b9d;
+    padding: 15% 15px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #f1faee;
+    transition: all 0.5s ease-in-out;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+}
+
+.header-content .title-header{
+   margin-bottom: 30px;
+   transition: all 0.5s ease-in-out;
+
+}
+
+.header-content .title-header h3{
+    font-size: 25x;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #f1faee;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.header-content .title-header h1{
+    font-size: 65px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #f1faee;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.header-content .title-header h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #f1faee;
+    font-size: 30px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.header-content p{
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.contactus-hero{
+    padding: 10px 15px;
+    border: none;
+    background-color: #e63946;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #f1faee;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
+  
+/* END HEADER- HERO/LANDING PAGE WEBSITE */
+        
+
+
+
+    /* === SECTION ABOUT ME === */
+.container_aboutme{
+    max-width: 1400px;
+    padding: 6rem 7rem;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.title-aboutme{
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+}
+
+.aboutme{
+    position: relative;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.aboutme-content{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.aboutme-content .image-aboutme img{
+    padding-bottom: 35px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    transform: translateX(5%); /* Pusat horizontal elemen */
+    transition: all 0.5s ease-in-out;
+}
+
+.desc-aboutme P {
+    color: #f1faee;
+    transition: all 0.5s ease-in-out;
+
+}
+
+/* === END SECTION ABOUT ME === */
+
+
+
+/* ==== Section  SERVICE ====*/
+
+.container_service{
+    max-width: 1400px;
+    margin: auto;
+    padding: 0rem 7rem;
+}
+
+.title-service h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #f1faee;
+    font-size: 40px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    padding-top: 35px;
+    transition: all 0.6s ease-in-out;
+
+  }
+
+  .front{
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+
+
+  }
+
+  .service-card {
+    position: relative;
+    text-align: center;
+    transition: all 0.6s ease-in-out;
+
+}
+
+
+
+.body .title{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #caf0f8;
+    font-size: 20px;    
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    transition: all 0.6s ease-in-out;
+
+}
+
+.back .subtitle{
+    color: #f1faee;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;    
+    transition: all 0.6s ease-in-out;
+
+}
+/* ==== END SECTION SERVICE ==== */
+
+
+/* Portofolio */
+
+.container_portfolio{
+    max-width: 1400px;
+    margin: auto;
+    padding: 6rem 7rem;
+}
+
+
+.row-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 35px;
+}
+
+.title-portfolio h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #f1faee;
+    text-align: center;
+}
+
+.title-portfolio p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #f1faee;
+}
+
+
+.project-card{
+    position: relative;
+    padding: auto;
+    max-width: 600px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    border-radius: 15px;
+}
+
+.project-card img{
+    min-width:300px;
+    max-width: 600px;
+    width: 600px;
+    height: 400px;
+    border-radius: 15px;
+    object-fit: fill;
+    
+    
+}
+
+/*  */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(54, 84, 134, 0.7); /* putih transparant */
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+  
+  .project-card:hover .overlay {
+    opacity: 1;
+    animation: fadeIn 0.5s ease-out forwards;
+    
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .overlay span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    
+  }
+  
+  .overlay p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px; /* Tambahkan margin atas pada <p> */
+  }
+
+/* End Portfolio */
+
+
+
+
+
+
+}
+/* ===== END Responsive View Untuk Ukuran layar  1024px ===== */
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Responsive View Untuk Ukuran layar < 800px ===== */
+@media (max-width: 800px){
+    /* ===== NAVBARR ==== */
+    nav{
+        margin: auto;
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        background: #1d3557;
+        align-items: center;
+        padding: 2rem 1rem;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+        justify-content: space-between;
+    }
+
+.title-navbar{
+    margin: auto;
+}
+
+
+.title-navbar .nav-logo{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.title-navbar a span{
+    color: white;
+    font-family: "Khula", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    align-items: center;
+    padding: 0px 10px;
+    margin-top: 10px;
+}
+
+.menu-btn-navbar{
+    display: none;
+}
+
+.nav-links{
+   position: fixed;
+   width: 100%;
+   height: 400px;
+   background-color: #457b9d;
+   top: 115px;
+   left: 0;
+   transform: translateX(-100%);
+   text-align: center;
+   flex-direction: column;
+   z-index: -1;
+   display: flex;
+   text-align: center;
+   justify-content:space-between;
+   align-items: center;
+    transition: all 0.5s ease-in-out;
+   
+}
+
+.nav-links li{
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+.nav-links li a{
+    color: #f1faee;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 25px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.nav-links a:hover{
+    transition: .5s;
+    background: #f1faee;
+    padding: 5px 10px;
+    color: #1d3557;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.nav-links .contactus-menu{
+    display: flex;
+}
+
+.contactus{
+    display: none;
+}
+
+.title-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    
+}
+
+.menu-btn-navbar{
+    display: block;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #f1faee;
+    cursor: pointer;
+    transition: all 0.5 ease-in-out;
+}
+
+.nav-links.open{
+    transform: translateX(0);
+    transition: all 0.5 ease-in-out;
+}
+
+    /* ===== END NAVBARR ==== */
+
+
+    /* HEADER - HERO/LANDING PAGE WEBSITE */
+
+    .container_header{
+        max-width: 1400px;
+        margin: auto;
+        padding: 0rem 1rem;
+        padding-top: 20%;
+        transition: all 0.5s ease-in-out;
+
+    }
+    
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        
+    }
+    
+    .header-content {
+        background-color: #457b9d;
+        padding: 15% 15px;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        color: #f1faee;
+        transition: all 0.5s ease-in-out;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+
+    }
+    
+    .header-content .title-header{
+       margin-bottom: 30px;
+       transition: all 0.5s ease-in-out;
+
+    }
+
+    .header-content .title-header h3{
+        font-size: 25x;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #f1faee;
+        transition: all 0.5s ease-in-out;
+
+    }
+    
+    
+    .header-content .title-header h1{
+        font-size: 65px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #f1faee;
+        transition: all 0.5s ease-in-out;
+
+    }
+    
+    .header-content .title-header h2{
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        color: #f1faee;
+        font-size: 30px;
+        transition: all 0.5s ease-in-out;
+
+    }
+    
+    .header-content p{
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        transition: all 0.5s ease-in-out;
+
+    }
+    
+    .contactus-hero{
+        padding: 10px 15px;
+        border: none;
+        background-color: #e63946;
+        border-radius: 10px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #f1faee;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        margin-top: 30px;
+        font-size: 20px;
+        transition: all 0.5s ease-in-out;
+    }
+      
+    /* END HEADER- HERO/LANDING PAGE WEBSITE */
+
+
+    /* === SECTION ABOUT ME === */
+.container_aboutme{
+    max-width: 1400px;
+    padding: 6rem 1rem;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.title-aboutme{
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+}
+
+.aboutme{
+    position: relative;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.aboutme-content{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.aboutme-content .image-aboutme img{
+    padding-bottom: 35px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    transform: translateX(5%); /* Pusat horizontal elemen */
+    transition: all 0.5s ease-in-out;
+}
+
+.desc-aboutme P {
+    color: #f1faee;
+
+}
+
+/* === END SECTION ABOUT ME === */
+
+
+
+/* ==== Section  SERVICE ====*/
+
+.container_service{
+    max-width: 1400px;
+    margin: auto;
+    padding: 6rem 1rem;
+}
+
+.title-service h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #f1faee;
+    font-size: 40px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    width: 100%;
+    padding-top: 35px;
+    transition: all 0.6s ease-in-out;
+
+  }
+
+  .front{
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+
+
+  }
+
+  .service-card {
+    position: relative;
+    text-align: center;
+    transition: all 0.6s ease-in-out;
+
+}
+
+
+.body .icon{
+    max-width: 70px;
+    transition: all 0.6s ease-in-out;
+
+}
+
+
+
+.body .title{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #caf0f8;
+    font-size: 14px;    
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    transition: all 0.6s ease-in-out;
+
+}
+
+.back .subtitle{
+    color: #f1faee;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;    
+    transition: all 0.6s ease-in-out;
+
+}
+/* ==== END SECTION SERVICE ==== */
+
+/* Portofolio */
+
+.container_portfolio{
+    max-width: 1400px;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+
+    padding: 6rem 7rem;
+}
+
+
+.row-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 35px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.title-portfolio h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #f1faee;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.title-portfolio p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #f1faee;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.project-card{
+    position: relative;
+    padding: auto;
+    max-width: 600px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transition: all 0.5s ease-in-out;
+    border-radius: 15px;
+}
+
+.project-card img{
+    min-width:300px;
+    max-width: 600px;
+    width: 600px;
+    height: 400px;
+    border-radius: 15px;
+    object-fit: fill;
+    transition: all 0.5s ease-in-out;
+
+    
+}
+
+/*  */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(54, 84, 134, 0.7); /* putih transparant */
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+
+}
+  
+  .project-card:hover .overlay {
+    opacity: 1;
+    animation: fadeIn 0.5s ease-out forwards;
+    transition: all 0.5s ease-in-out;
+
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .overlay span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+
+  }
+  
+  .overlay p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px; /* Tambahkan margin atas pada <p> */
+    transition: all 0.5s ease-in-out;
+ 
+}
+
+/* End Portfolio */
+
+}
+/* ===== END Responsive View Untuk Ukuran layar < 800px ===== */
+
+
+
+
+
+
+
+/* ===== Responsive View Untuk Ukuran layar < 800px ===== */
+@media (max-width: 500px){
+
+    /* ===== NAVBARR ==== */
+    nav{
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        margin: auto;
+        z-index: 999;
+        background: #1d3557;
+        align-items: center;
+        padding: 2rem 1rem;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+        justify-content: space-between;
+    }
+
+
+
+
+.title-navbar .nav-logo{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.title-navbar a span{
+    color: white;
+    font-family: "Khula", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    align-items: center;
+    padding: 0px 10px;
+    margin-top: 10px;
+}
+
+.menu-btn-navbar{
+    display: none;
+}
+
+.nav-links{
+   position: fixed;
+   width: 100%;
+   height: 400px;
+   background-color: #457b9d;
+   top: 115px;
+   left: 0;
+   transform: translateX(-100%);
+   text-align: center;
+   flex-direction: column;
+   z-index: -1;
+   display: flex;
+   text-align: center;
+   justify-content:space-between;
+   align-items: center;
+    transition: all 0.5s ease-in-out;
+   
+}
+
+.nav-links li{
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+.nav-links li a{
+    color: #f1faee;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 25px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.nav-links a:hover{
+    transition: .5s;
+    background: #f1faee;
+    padding: 5px 10px;
+    color: #1d3557;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.nav-links .contactus-menu{
+    display: flex;
+}
+
+.contactus{
+    display: none;
+}
+
+.title-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    
+}
+
+.menu-btn-navbar{
+    display: block;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #f1faee;
+    cursor: pointer;
+    transition: all 0.5 ease-in-out;
+}
+
+.nav-links.open{
+    transform: translateX(0);
+    transition: all 0.5 ease-in-out;
+}
+
+    /* ===== END NAVBARR ==== */
+
+
+    /* HEADER - HERO/LANDING PAGE WEBSITE */
+
+    .container_header{
+        max-width: 1400px;
+        margin: auto;
+        padding: 50% 1rem;
+        transition: all 0.5s ease-in-out;
+
+    }
+    
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        
+    }
+    
+    .header-content {
+        background-color: #457b9d;
+        padding: 15% 15px;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        color: #f1faee;
+        transition: all 0.5s ease-in-out;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+
+    }
+    
+    .header-content .title-header{
+       margin-bottom: 20px;
+       transition: all 0.5s ease-in-out;
+
+    }
+    
+    
+    .header-content .title-header h1{
+        font-size: 35px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #f1faee;
+        transition: all 0.5s ease-in-out;
+
+    }
+    
+    .header-content .title-header h2{
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        color: #f1faee;
+        font-size: 20px;
+        transition: all 0.5s ease-in-out;
+
+    }
+    
+    .header-content p{
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        transition: all 0.5s ease-in-out;
+
+    }
+    
+    .contactus-hero{
+        padding: 10px 15px;
+        border: none;
+        background-color: #e63946;
+        border-radius: 10px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #f1faee;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        margin-top: 30px;
+        font-size: 15px;
+        transition: all 0.5s ease-in-out;
+    }
+      
+    /* END HEADER- HERO/LANDING PAGE WEBSITE */
+
+
+    /* === SECTION ABOUT ME === */
+.container_aboutme{
+    max-width: 1400px;
+    padding: 0rem 1rem;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.title-aboutme{
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+}
+
+.aboutme{
+    position: relative;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.aboutme-content{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.aboutme-content .image-aboutme img{
+    padding-bottom: 35px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    transform: translateX(5%); /* Pusat horizontal elemen */
+    transition: all 0.5s ease-in-out;
+}
+
+/* === END SECTION ABOUT ME === */
+
+
+/* ==== Section  SERVICE ====*/
+
+.container_service{
+    max-width: 1400px;
+    margin: auto;
+    padding: 6rem 1rem;
+}
+
+.title-service h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #f1faee;
+    font-size: 40px;
+}
+
+.front{
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+
+
+  }
+
+  .service-card {
+    position: relative;
+    text-align: center;
+    transition: all 0.6s ease-in-out;
+
+}
+
+
+ 
+
+.body .title{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #1d3557;
+    font-size: 16px;    
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+/* ==== END SECTION SERVICE ==== */
+
+
+
+
+/* Section Portofolio */
+.container_portfolio{
+    max-width: 1400px;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+
+    padding: 6rem 1rem;
+}
+
+.title-portfolio{
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.title-portfolio h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 15px;
+    color: #1d3557;
+    font-size: 40px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.title-portfolio p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 15px;
+    color: #f1faee;
+    font-size: 13px;
+    transition: all 0.5s ease-in-out;
+
+    text-align: center;
+}
+
+
+/* Portofolio */
+
+
+.row-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    width: 100%;
+    padding-top: 35px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.project-card{
+    position: relative;
+    padding: auto;
+    max-width: 360px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.project-card img{
+    width: 350px;
+    height: 270px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+
+}
+
+/*  */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(54, 84, 134, 0.7); /* putih transparant */
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+
+}
+  
+  .project-card:hover .overlay {
+    opacity: 1;
+    animation: fadeIn 0.5s ease-out forwards;
+    transition: all 0.5s ease-in-out;
+
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .overlay span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+
+  }
+  
+  .overlay p {
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+
+    margin-top: 10px; /* Tambahkan margin atas pada <p> */
+  }
+
+/* End Portfolio */
+
+
+/* Social Media */
+
+
+
+/* socialmedia */
+.social-media{
+    justify-content: center;
+    padding: 0rem 1rem;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.social-media-title{
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+.social-media-title p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #343642;
+    margin-bottom: 40px;
+    justify-content: center;
+    margin-top: 20px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.icon{
+    text-align: center;
+    margin-bottom: 20%;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.icon .ri{
+    font-size: 30px;
+    color: #457b9d;
+    transition: 0.5s ease-in-out;
+    padding: 10px 15px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.icon .ri:hover{
+    background-color: #1d3557;
+    color: #ffff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+}
+/* End Social Media */
+
+
+}
+/* ===== END Responsive View Untuk Ukuran layar < 800px ===== */
+
