@@ -1048,7 +1048,9 @@ nav{
 
 /* ===== Responsive View Untuk Ukuran layar < 800px ===== */
 @media (max-width: 800px){
-
+ body {
+        overflow-x: hidden;
+      }
     /* ===== NAVBARR ==== */
     nav{
         display: flex;
